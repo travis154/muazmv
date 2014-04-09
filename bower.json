@@ -1,0 +1,21 @@
+{
+  "name": "muazmv",
+  "version": "0.0.0",
+  "homepage": "http://github.com/iulogy/muazmv",
+  "authors": [
+    "iulogy"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "davis": "~0.9.8"
+  }
+}
