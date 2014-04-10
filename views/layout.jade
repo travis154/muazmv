@@ -9,52 +9,58 @@ html
 		script(src='/js/jquery-2.0.3.min.js')
 		script(src='/js/bootstrap.min.js')
 		script(src='/components/davis/davis.js')
+		script(src='/components/flowtype/flowtype.js')
 		script(src='/js/muaz.js')
 		script setTimeout(function(){$(function(){$('#content-wrapper').carousel('pause');});},200);
 	body
+		div#fb-root
+		script (function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=568010613234136";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
 		section.container-fluid
+			section#content-wrapper.carousel.slide(data-ride="carousel")
+				section#menu
+					ul.list-unstyled.list-inline
+						li
+							a(href="/") HOME
+						li
+							a(href="/about") ABOUT
+						li
+							a(href="/contact") CONTACT
+					div.fb-like-box(data-href="https://www.facebook.com/MUAZ2014", data-colorscheme="dark", data-show-faces="false", data-header="false", data-stream="false", data-show-border="false")
+				div.carousel-inner
+					div.item#i.active
+						//h1 “This sentence is surrounded by &ldquo; and &rdquo;, which are a type of quotation marks.”
+					div.item#j
+					div.item#k
 			section.row
-				section.col-xs-6#content-wrapper.carousel.slide(data-ride="carousel")
-					section#menu
-						ul.list-unstyled.list-inline
-							li
-								a(href="/") HOME
-							li
-								a(href="/about") ABOUT
-							li
-								a(href="/contact") CONTACT
-					div.carousel-inner
-						div.item#i.active
-						div.item(style='background:red')
-							p hello
-						div.item(style='background:blue')
-							p hello
-				section.col-xs-6
-				section.col-xs-6#timeline-wrapper
-					header
-						h2.lighter MP
-						h1.bolder MUAZ MUHAMMAD RASHEED
+				section.col-xs-7
+				section.col-xs-4#timeline-wrapper
+					header( data-friction-x="0.1", data-friction-y="0.1", data-scalar-x="25", data-scalar-y="15")
+						h2.lighter.layer(data-depth="0.00") MP
+						h1.bolder.layer(data-depth="0.05") MUAZ MUHAMMAD RASHEED
 						//h2.lighter.italic Of
-						h2.lighter MADAVELI CONSTITUENCY
+						h2.lighter.layer(data-depth="0.10") MADAVELI CONSTITUENCY
 						section.strikeout
 							hr
-							span.bolder REPUBLIC OF MALDIVES
+							span.bolder.layer(data-depth="1.00") REPUBLIC OF MALDIVES
 					section.timeline-month
 						h3.bolder April 2014
 						section.timeline-item
-							h4 Innaalillaahi vainnaa ilaihi raaji'un. This calls for a serious review in safety issues in the working environment.
+							p Innaalillaahi vainnaa ilaihi raaji'un. This calls for a serious review in safety issues in the working environment.
 							h6.timeline-item-date
 								span Apr 3
 								span &nbsp;  
 								a(href="https://www.facebook.com/MUAZ2014/posts/273436246167906?stream_ref=10") comment
 						section.timeline-item
-							h4 Innaalillaahi vainnaa ilaihi raaji'un. This calls for a serious review in safety issues in the working environment.
+							p Innaalillaahi vainnaa ilaihi raaji'un. This calls for a serious review in safety issues in the working environment.
 							h6.timeline-item-date Apr 3
 						section.timeline-item.timeline-item-special
-							h4 Dear teachers, I'm 100% with you. Insha Allah I'll raise ur voice in majlis. #Respect #TeachersinBLACK #TeachersStrike Maldives.
+							p Dear teachers, I'm 100% with you. Insha Allah I'll raise ur voice in majlis. #Respect #TeachersinBLACK #TeachersStrike Maldives.
 							section
 								img.img-responsive(src="https://pbs.twimg.com/media/BkiYCJ1CMAAwsp3.jpg:large")
 							h6.timeline-item-date Apr 3
 					section.strikeout
 						hr
 						span.italic that's all!
+		script(src='/components/parallax/deploy/parallax.min.js')
+		script var scene = document.getElementById('scene');var parallax = new Parallax(scene);
+

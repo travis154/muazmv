@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "davis": "~0.9.8"
+    "davis": "~0.9.8",
+    "parallax": "~1.0.0",
+    "flowtype": "*"
   }
 }

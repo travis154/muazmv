@@ -11,12 +11,13 @@ body
 	background BODYCOLOR
 	overflow-x hidden
 #timeline-wrapper
-	background BODYCOLOR
+	//background BODYCOLOR
+	background: rgba(0, 169, 122,.9);
 	color white
 	header
 		text-align center
 .timeline-month
-	padding 3em 7.6em
+	padding 3em 1.6em
 .timeline-item
 	a
 		color white
@@ -48,26 +49,41 @@ body
 	position fixed
 	height 100%
 	padding-right: 0px;
+	width 100%
 #i
-	background: url('https://scontent-a-lhr.xx.fbcdn.net/hphotos-prn2/t31.0-8/1978569_265657816945749_1475296878_o.jpg') center center;
+	background: url('/images/bg.jpg') center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+#j
+	background: url('/images/bg2.jpg') center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+#k
+	background: url('/images/bg3.jpg') center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 #menu
-	background: rgba(0,0,0,.5);
-	position absolute
-	z-index 1
+	margin-top: 81px;
+	position: absolute;
+	z-index: 1;
+	margin-left: 50px;
 	ul
+		background: rgba(0,0,0,.05);
 		li
 			a
-				text-decoration none
-				padding 20px
-				display inline-block
-				color white
-				font-weight: bolder;
-				font-size: 1.7em;		
-				text-shadow: 1px 1px 3px rgba(0,0,0,.4);
+				text-decoration: none;
+				padding: 20px;
+				display: inline-block;
+				color: #5F5F5F;
+				font-weight: 400;
+				font-size: 20px;
+				text-shadow: 1px 1px 3px rgba(88, 88, 88, 0.4)
 .carousel-inner
 	height 100%
 	.item
