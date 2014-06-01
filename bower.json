@@ -18,6 +18,7 @@
   "dependencies": {
     "davis": "~0.9.8",
     "parallax": "~1.0.0",
-    "flowtype": "*"
+    "flowtype": "*",
+    "enquire": "~2.1.1"
   }
 }
